@@ -1,0 +1,6 @@
+package: github.com/bijukunjummen/multiple-interfaces-listener
+import:
+- package: github.com/voxelbrain/goptions
+- package: github.com/onsi/ginkgo
+- package: github.com/onsi/gomega
+- package: github.com/gorilla/mux
