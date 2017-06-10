@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/voxelbrain/goptions"
 	"github.com/bijukunjummen/multiple-interfaces-listener/listener"
+	"github.com/voxelbrain/goptions"
 	"sync"
 )
 
@@ -26,7 +26,7 @@ func main() {
 	var wg sync.WaitGroup
 	wg.Add(1)
 
-	for i:=0;i<len(options.Server);i++ {
+	for i := 0; i < len(options.Server); i++ {
 		l, _ := listener.NewPortListener(options.Server[i], options.Port[i])
 		l.ListenAndProvideStockResponses()
 	}
